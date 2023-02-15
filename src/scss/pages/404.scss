@@ -1,0 +1,45 @@
+.error-page {
+  min-height: 70vh;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: rem(74);
+
+  .mainscreen__image-ibg {
+    top: rem(0);
+  }
+
+  // .error-page__container
+
+  &__container {
+  }
+  
+
+  // .error-page__num
+
+  &__num {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+    }
+  }
+
+  // .error-page__title
+
+  &__title {
+    max-width: rem(340);
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  // .error-page__btn
+
+  &__btn {
+    padding-right: rem(45);
+    padding-left: rem(45);
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+}
+

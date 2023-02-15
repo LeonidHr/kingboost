@@ -1,0 +1,164 @@
+.blog {
+  padding-top: rem(16);
+  @include adaptiveValue("padding-bottom", 72, 30);
+
+  // .blog__container
+
+  &__container {
+  }
+
+  // .blog__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  // .blog__form
+
+  &__form {
+  }
+
+  // .blog__content
+
+  &__content {
+    @include adaptiveValue("gap", 90, 30, 0, 1100, 767);
+    @media (max-width: em(650)){
+      flex-direction: column; 
+    }
+  }
+
+  // .blog__filter
+
+  &__filter {
+    flex: 0 0 rem(200);
+  }
+
+  // .blog__articles
+
+  &__articles {
+    @include adaptiveValue("column-gap", 24, 18);
+    row-gap: rem(24);
+  }
+
+  // .blog__item
+
+  &__item {
+  }
+}
+
+.form-blog {
+  &:not(:last-child) {
+    margin-bottom: rem(23);
+  }
+
+  // .form-blog__item
+
+  &__item {
+    column-gap: rem(28);
+    row-gap: rem(15);
+    position: relative;
+    
+    @media (min-width:$mobileSmall){
+      align-items: center; 
+    }
+    @media (max-width:$mobileSmall){
+      flex-direction: column; 
+    }
+
+    &::before{
+      position: absolute;
+      font-size: rem(20);
+      @include adaptiveValue("left", 27, 20);
+      top: 50%;
+      transform: translateY(-50%);
+      color: #636872;
+
+      @media (max-width:$mobileSmall){
+        top: rem(26); 
+      }
+    }
+  }
+
+  // .form-blog__input
+
+  &__input {
+    padding-left: rem(62);
+    background: #212121;
+    border: 1px solid #313132;
+    border-radius: 12px;
+    @media (min-width:$mobileSmall){
+      flex: 1 1 auto;
+    }
+  }
+
+  // .form-blog__btn
+
+  &__btn {
+    @media (min-width:$mobileSmall){
+      flex: 0 0 rem(152);   
+    }
+  }
+}
+
+.filter-blog {
+
+  // .filter-blog__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  .checkbox__label::after {
+    background: #212121;
+    border: 1px solid #313132;
+    border-radius: 5px;
+    align-self: start;
+  }
+  .checkbox__label::before {
+    top: rem(10);
+  }
+}
+
+.form-filter {
+  column-gap: rem(20);
+  @media (max-width: em(650)){
+    columns: rem(170); 
+  }
+
+  // .form-filter__item
+
+  &__item {
+  }
+}
+
+.item-articles {
+
+  // .item-articles__img
+
+  &__img {
+  }
+
+  // .item-articles__content
+
+  &__content {
+  }
+
+  // .item-articles__title
+
+  &__title {
+  }
+
+  // .item-articles__label
+
+  &__label {
+  }
+
+  // .item-articles__date
+
+  &__date {
+  }
+}

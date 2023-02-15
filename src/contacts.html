@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Contacts"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+        <div class="path">
+          <div class="path__container">
+            <a href="#" class="path__link">Home</a>
+            <span class="path__link _icon-arrow-down"></span>
+            <a href="#" class="path__link">Contacts</a>
+          </div>
+        </div>
+        <section class="contacts">
+          <div class="contacts__container d-flex">
+            <div class="contacts__form-wrap">
+              <h1 class="contacts__title title title_s52">Contact us</h1>
+              <form data-ajax data-popup-message="#popup-form" class="contacts__form bg-212121 form" action="files/sendmail/sendmail.php" method="POST">
+                <div class="form__content">
+                  <div class="form__title-block title-block text-start">
+                    <h5 class="title-block__subtitle">CONTACT</h5>
+                    <h2 class="title-block__title title title_s26">Leave us message</h2>
+                  </div>
+                  <div class="form__item d-flex direction-col">
+                    <label for="form-name" class="form__label text text_s14">Your name</label>
+                    <input autocomplete="off" id="form-name" type="text"  data-required name="form[name]" data-error="Enter your name" placeholder="Your name" class="form__input">
+                  </div>
+                  <div class="form__item d-flex direction-col">
+                    <label for="form-email" class="form__label text text_s14">E-mail</label>
+                    <input autocomplete="off" id="form-name" type="text"  data-required name="form[email]" data-error="Enter your e-mail" placeholder="Your e-mail" class="form__input">
+                  </div>
+                  <div class="form__item d-flex direction-col">
+                    <label for="form-message" class="form__label text text_s14">Message</label>
+                      <textarea name="form[message]" id="form-message" data-error="Enter your your Message" placeholder="Your message" autocomplete="off" id="form-message" type="text"  data-required class="form__input form__input_big"></textarea>
+                  </div>
+                  <div class="form__item form__item_file">
+                    <label for="form-file" class="form__label d-flex ai-center _icon-pin text">
+                      Attach file
+                    </label>
+                    <input autocomplete="off" id="form-file" type="file" name="form[file]" data-error="Add your file" placeholder="Your Message" class="form__input">
+                  </div>
+                  <button type="submit" class="form__btn button button_big hhv-purple-gradient">
+                    <span>Send message</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="contacts__contacts contacts-contacts">
+              <h2 class="contacts-contacts__title title">We work 24/7</h2>
+              <ul class="contacts-contacts__list d-flex direction-col">
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/mail.png" alt="Customer Service">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">Customer Service</h6>
+                    <a href="mailto:support@kingboost.net" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      support@kingboost.net
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/mail.png" alt="Data Protection Officer">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">Data Protection Officer</h6>
+                    <a href="mailto:privacy@kingboost.net" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      privacy@kingboost.net
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/mail.png" alt="Work with us">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">Work with us</h6>
+                    <a href="mailto:support@kingboost.net" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      job@kingboost.net
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/mail.png" alt="Write to our CEO">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">Write to our CEO</h6>
+                    <a href="mailto:officer@kingboost.net" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      officer@kingboost.net
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/fb.png" alt="FACEBOOK MESSENGER">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">FACEBOOK MESSENGER</h6>
+                    <a href="https://facebook.com" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      Click on that to chat us on Facebook
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/discord.png" alt="DISCORD">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">DISCORD</h6>
+                    <a href="https://discord.comkingboost#2583" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      kingboost#2583
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/whatsapp.png" alt="WHATSAPP">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">WHATSAPP</h6>
+                    <a href="https://wa.me/971525399756" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      +971 52 539 9756
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/live.png" alt="LiVECHAT">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">LiVECHAT</h6>
+                    <a href="https://livechat.com" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      Click to chat with us
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts-contacts__item item-contacts d-flex ai-center bg-212121">
+                  <div class="item-contacts__icon">
+                    <img class="img-w-100p" data-src="@img/contacts/tg.png" alt="TELEGRAM">
+                  </div>
+                  <div class="item-contacts__content">
+                    <h6 class="item-contacts__title text text_s14 color-F6F2FF">TELEGRAM</h6>
+                    <a href="https://t.me/+971525399756" target="_blanck" class="item-contacts__link title title_s18 hhv-grey">
+                      +971 52 539 9756
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mainscreen-second__image-ibg">
+            <img class="img-fluid" data-src="@img/with-us-mainscreen/line.png" alt="Purple lines">
+          </div>
+        </section>
+      </main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
